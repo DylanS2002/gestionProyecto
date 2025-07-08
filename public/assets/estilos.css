@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://img.freepik.com/foto-gratis/primer-plano-pared-marmol-blanco-textura_53876-139849.jpg?semt=ais_hybrid&w=740) no-repeat;
+    height: 100vh;font-family: sans-serif;background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden
+}
+@media screen and (max-width: 600px;){
+    body{
+        background-size: cover;: fixed}
+    }
+
+#particles-js{height: 100%}
+
+.loginBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    min-height: 200px;
+    background: #000000;border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box
+}
+.user{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px
+}
+h3{margin: 0;
+    padding: 0 0 20px;
+    color: #c19d44;
+    text-align: center
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.loginBox button{
+    width: 100%;
+    margin-bottom: 20px
+}
+.loginBox input[type="text"], 
+.loginBox input[type="email"],
+.loginBox input[type="password"]{
+    border: none;
+    border-bottom: 2px solid #262626;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box
+}
+.loginBox input[type="text"]:hover, .loginBox input[type="password"]:hover, .loginBox input[type="email"]:hover{
+    color: #c19d44;
+    border: 1px solid #c19d44
+    ;box-shadow: 0 0 5px rgba(225, 255, 0, 0.3), 0 0 10px rgba(255,225,0,.2), 0 0 15px rgba(255,225,0,.1), 0 2px 0 black
+}
+.loginBox input[type="text"]:focus, .loginBox input[type="password"]:focus, .loginBox input[type="email"]:focus{
+    border-bottom: 2px solid #c19d44}
+.inputBox{position: relative}
+    
+.inputBox span{
+        position: absolute;
+        top: 10px;
+        color: #262626
+}
+.loginBox button[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #c19d44;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.loginBox a{
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    display: block
+}
+
+    
+a:hover{
+    color: #c19d44;
+    text-shadow:
+                0 0 5px #c19d44,
+                0 0 10px #c19d44,
+                0 0 20px #c19d44,
+                0 0 40px #c19d44;
+}
+p{
+    color: #0000ff
+}
