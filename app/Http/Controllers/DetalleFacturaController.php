@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\detalleFacturasRequest;
 use App\Models\detalleFactura;
 use App\Models\factura;
 use App\Models\producto;
@@ -33,15 +34,9 @@ class DetalleFacturaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(detalleFacturasRequest $request)
     {
-        $request->validate([
-            'cantidad'=>'required',
-            'preciounitario'=> 'required|min:3|max:255',
-            'totalinea'=> 'required|min:3|max:255',
-            'idfactura'=>'required',
-            'idproducto'=> 'required',
-        ]);
+        $validaciones = $request->validated();
         detalleFactura::create($request->all());
         return redirect()->route('detalleFactura.imdex')->with('success','Creado con Exito');
     }
