@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\clientesRequest;
 use App\Models\cliente;
 use Illuminate\Http\Request;
 
@@ -27,18 +28,9 @@ class ClienteController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(clientesRequest $request)
     {
-        $request->validate([
-            'nombre'=>'required|min:3|max:255',
-            'apellido'=> 'required|min:3|max:255',
-            'direccion'=> 'required|min:3|max:255',
-            'fecha_nacimiento'=>'required|min:3|max:255',
-            'telefono'=> 'required|max:100',
-            'email'=> 'required|min:3|max:255',
-            'fecha_registro'=> 'required|min:3|max:255',
-            'genero'=> 'required',
-        ]);
+        $validacion = $request->validated();
         cliente::create($request->all());
         return redirect()->route('cliente.index')->with('success','Se creo Correctamente');
     }
