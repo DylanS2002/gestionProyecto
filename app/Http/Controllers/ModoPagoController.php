@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\pagoRequest;
 use App\Models\modo_pago;
 use Illuminate\Http\Request;
 
@@ -27,13 +28,9 @@ class ModoPagoController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(pagoRequest $request)
     {
-        $request->validate([
-            'nombre'=> 'required|min:3|max:225',
-            'descripcion'=> 'required|max:1000',
-            'activo'=> 'required',
-        ]);
+        $validacion = $request->validated();
         modo_pago::create($request->all());
         return redirect()->route("modoPago.index")->with('success','Creado con Exito');
     }
