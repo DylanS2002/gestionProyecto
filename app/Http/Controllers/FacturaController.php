@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\facturasRequest;
 use App\Models\cliente;
 use App\Models\estado;
 use App\Models\factura;
@@ -33,17 +34,9 @@ class FacturaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(facturasRequest $request)
     {
-        $request->validate([
-            'fecha'=>'required|min:3|max:1000',
-            'Subtotal'=> 'required',
-            'impuestos'=> 'required',
-            'total' => 'required',
-            'idcliente'=> 'required',
-            'idestado'=> 'required',
-            'idpago'=> 'required',  
-        ]);
+        $validacion = $request->validated();
         factura::create($request->all());
         return redirect()->route('factura.index')->with('success','Creado con Exito');
     }
