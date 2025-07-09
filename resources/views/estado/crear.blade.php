@@ -15,10 +15,11 @@
                     @csrf
                     <label for="descripcion" class="form-label">Estado</label>
                     <input type="text" name="descripcion" id="descripcion" class="form-control @error('descripcion') is-invalid @enderror">
-                    <button type="submit" class="btn btn-success mt-3">Guardar</button>
                         @error('descripcion')
                             <div class="invalid-feedback">{{ $message }}</div>
                         @enderror
+                    <button type="submit" class="btn btn-success mt-3">Guardar</button>
+                        
 
                 </form>
             </div>

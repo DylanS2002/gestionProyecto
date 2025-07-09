@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\estadosRequest;
 use App\Models\estado;
 use Illuminate\Http\Request;
 
@@ -27,11 +28,9 @@ class EstadoController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(estadosRequest $request)
     {
-        $request->validate([
-            'descripcion'=>'required|min:3|max:1000',
-        ]);
+        $validacion = $request->validated();
         estado::create($request->all());
         return redirect()->route('estado.index')->with('success','Ceado con Exito');
     }
