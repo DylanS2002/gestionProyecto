@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\productoRequest;
 use App\Models\Categoria;
 use App\Models\Marca;
 use App\Models\producto;
@@ -32,19 +33,9 @@ class ProductoController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(productoRequest $request)
     {
-        $request->validate([
-            'nombre'=> 'required|min:3|max:225',
-            'descripcion'=> 'required|max:1000',
-            'precio'=> 'required',
-            'precio_compra'=> 'required',
-            'stock'=> 'required',
-            'fecha_creacion'=> 'required',
-            'estado'=> 'required',
-            'idcategoria'=> 'required',
-            'idmarca'=> 'required',
-        ]);
+        $validacion = $request->validated();
         producto::create($request->all());
         return redirect()->route('producto.index')->with('success','Creado con Exito');
     }
