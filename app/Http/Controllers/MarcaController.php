@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\marcaRequest;
 use App\Models\Marca;
 use Illuminate\Http\Request;
 
@@ -27,12 +28,9 @@ class MarcaController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(marcaRequest $request)
     {
-        $request->validate([
-            'nombre'=> 'required|min:3|max:225',
-            'description'=> 'required|max:1000',
-        ]);
+        $validacion = $request->validated();
         Marca::create($request->all());
         return redirect()->route('marca.index')->with('success','Creado Corectamente');
     }
