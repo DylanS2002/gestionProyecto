@@ -3,8 +3,14 @@
 @section('title', 'ELITEfox-Inicio')
 
 @section('content_header')
-    <h1 class="h1 text-center"><b>Elite</b>fox</h1>
+    <h1 class="h1 text-center">Gestion</h1>
 @stop
+
+@section('content_top_nav_left')
+    <li class="nav-item d-none d-sm-block" style="position: absolute; left: 50%; transform: translateX(-50%);">
+        <span class="fw-bold text-center" style="font-size: 20px; color: #c19d44;"><b>Elite</b>fox</span>
+    </li>
+@endsection
 
 @section('content')
     <div class="container">
@@ -89,6 +95,9 @@
 @stop
 
 @section('css')
+    <style>
+    
+</style>
     <style>
         .main-sidebar {
             background-image: url("https://i.pinimg.com/736x/19/d9/b5/19d9b576468ba999e2c49582a5879599.jpg");
