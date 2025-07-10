@@ -100,7 +100,7 @@
 
     <style>
         .content-wrapper {
-            background-image: url("https://img.freepik.com/foto-gratis/primer-plano-pared-marmol-blanco-textura_53876-139849.jpg?semt=ais_items_boosted&w=740");
+            background-image: url("https://i.pinimg.com/736x/19/d9/b5/19d9b576468ba999e2c49582a5879599.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -123,15 +123,6 @@
         }
     </style>
 
-    <style>
-        .preloader {
-            background-color: #000000; /* Cambia esto al color que quieras */
-        }
-
-        .preloader img {
-            filter: drop-shadow(0 0 5px #c19d44); /* Efecto visual opcional */
-        }
-    </style>
 
     
     <style>
