@@ -144,7 +144,7 @@
             text-shadow: 0 0 8px #c19d44, 0 0 12px #c19d44; /* color neón azul */
         }
     </style>
-     <style>
+    <style>
         .nav-sidebar .nav-link {
             transition: color 0.3s ease-in-out;
         }
@@ -154,7 +154,7 @@
         }
     </style>
 
-     <style>
+    <style>
         .nav-sidebar .nav-link:hover {
             color: #fff;
             text-shadow:

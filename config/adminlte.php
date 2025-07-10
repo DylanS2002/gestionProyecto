@@ -501,10 +501,9 @@ return [
     |
     */
 
-    'livewire' => false,
-    'assets' => [
-    'css' => [
-        'css/admin_custom.css',
+        'assets' => [
+        'css' => [
+            'css/custom.css',
         ],
     ],
 ];
