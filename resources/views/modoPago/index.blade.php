@@ -41,11 +41,11 @@
                     @endif
                 </td>
                 <td>
-                    <a href="{{route('modoPago.edit', $modoPago->id)}}" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
+                    <a href="{{route('modoPago.edit', $modoPago->id)}}" title="Editar" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
                     
                     <form action="{{route('modoPago.destroy', $modoPago->id)}}" method="post" class="d-inline">
                         @csrf
-                        <button type="submit" class="btn btn-outline-danger" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
+                        <button type="submit" class="btn btn-outline-danger" title="Eliminar" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
                     </form>
                 </td>
                 </tr>

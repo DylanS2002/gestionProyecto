@@ -123,5 +123,17 @@
   }
 </style>
 
+
+<style>
+    #myTable tbody tr:hover {
+        background-color: rgba(193, 157, 68, 0.1) !important; /* tono dorado suave de fondo */
+        box-shadow: 0 0 10px rgba(193, 157, 68, 0.7), 
+                    0 0 20px rgba(193, 157, 68, 0.5), 
+                    0 0 30px rgba(193, 157, 68, 0.3);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+</style>
+
 </body>
 </html>

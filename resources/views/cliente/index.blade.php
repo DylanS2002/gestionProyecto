@@ -53,11 +53,11 @@
                     <td>{{$cliente->genero}}</td>
                     <td>
                     <div class="row">
-                        <a href="{{route('cliente.edit', $cliente->id)}}" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
+                        <a href="{{route('cliente.edit', $cliente->id)}}" title="editar" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
                     
                     <form action="{{route('cliente.destroy', $cliente->id)}}" method="post">
                         @csrf
-                        <button type="submit" class="btn btn-outline-danger" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
+                        <button type="submit" class="btn btn-outline-danger" title="Eliminar" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
                     </form>
                 </td>
                     </div>

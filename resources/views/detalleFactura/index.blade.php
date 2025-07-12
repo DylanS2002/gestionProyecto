@@ -42,11 +42,11 @@
                     <td>{{$detalleFactura->preciounitario}}</td>
                     <td>{{$detalleFactura->totalinea}}</td>
                     <td>
-                    <a href="{{route('detalleFactura.edit', $detalleFactura->id)}}" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
+                    <a href="{{route('detalleFactura.edit', $detalleFactura->id)}}" title="Editar" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
                     
                         <form action="{{route('detalleFactura.destroy', $detalleFactura->id)}}" method="post" class="d-inline">
                             @csrf
-                            <button type="submit" class="btn btn-outline-danger" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
+                            <button type="submit" title="eliminar" class="btn btn-outline-danger" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
                         </form>
                     </td>
                 </tr>

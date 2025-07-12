@@ -35,11 +35,11 @@
                 <td>{{$marca->nombre}}</td>
                 <td>{{$marca->description}}</td>
                 <td>
-                    <a href="{{route('marca.edit', $marca->id)}}" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
+                    <a href="{{route('marca.edit', $marca->id)}}" title="Editar" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
                     
                     <form action="{{route('marca.destroy', $marca->id)}}" method="post" class="d-inline">
                         @csrf
-                        <button type="submit" class="btn btn-outline-danger" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
+                        <button type="submit" class="btn btn-outline-danger" title="Elminar" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
                     </form>
                 </td>
                 </tr>

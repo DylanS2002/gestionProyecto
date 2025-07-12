@@ -47,10 +47,10 @@
                 <td>{{$factura->impuestos}}</td>
                 <td>{{$factura->total}}</td>
                 <td>
-                    <a href="{{route('factura.edit', $factura->id)}}" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
+                    <a href="{{route('factura.edit', $factura->id)}}" title="Editar" class="btn btn-outline-warning"><i class="fas fa-pencil-alt fa-lg"></i></a>
                     <form action="{{route('factura.destroy', $factura->id)}}" class="d-inline" method="POST">
                         @csrf
-                        <button class="btn btn-outline-danger " onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
+                        <button class="btn btn-outline-danger" title="Eliminar" onclick="confirmarEliminacion(event)"><i class="fas fa-trash-alt fa-lg"></i></button>
                     </form>
                 </td>
             </tr>
