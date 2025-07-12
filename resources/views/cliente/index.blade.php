@@ -4,14 +4,15 @@
 @section('title', 'ELITEfox-Clientes')
 
 @section('content_header')
-    <h1>Clientes</h1>
+    <h1 class="texto-brillante text-center">Clientes</h1>
 @stop
 
 @section('content_top_nav_left')
     <li class="nav-item d-none d-sm-block" style="position: absolute; left: 50%; transform: translateX(-50%);">
-        <span class="fw-bold text-center" style="font-size: 20px; color: #c19d44;"><b>Elite</b>fox</span>
+        <span class="fw-bold texto-brillante text-center" style="font-size: 20px; color: #c19d44;"><b>Elite</b>fox</span>
     </li>
 @endsection
+
 @section('content')
     <div class="container mb-3">
         <div class="row">
