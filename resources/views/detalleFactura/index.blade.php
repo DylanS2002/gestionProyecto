@@ -14,8 +14,9 @@
 @endsection
 
 @section('content')
-    <a href="{{route('index')}}" class="btn btn-outline-primary"><i class="fa fa-reply" aria-hidden="true"></i></a>
-    <a href="{{route('detalleFactura.create')}}" class="btn btn-outline-info"><i class="fa fa-plus" aria-hidden="true"></i></a>
+    <div class="container mb-3">
+        <a href="{{route('detalleFactura.create')}}" title="Crear Nuevo" class="btn btn-outline-info"><i class="fa fa-plus" aria-hidden="true"></i></a>
+    </div>
 
     <table class="table table-dark table-striped" id="myTable">
         <thead>
@@ -52,6 +53,9 @@
             @endforeach
         </tbody>
     </table>
+    <div class="container mt-3">
+        <a href="{{route('index')}}" title="Volver" class="btn btn-outline-primary"><i class="fa fa-reply" aria-hidden="true"></i></a>
+    </div>
 @stop
 
 @section('css')
