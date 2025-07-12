@@ -94,5 +94,34 @@
         }
     </style>
 
+    <style>
+  .texto-brillante {
+    color: #c19d44;
+    text-shadow:
+      0 0 5px #c19d44,
+      0 0 10px #c19d44,
+      0 0 20px #c19d44,
+      0 0 40px #c19d44;
+    animation: brillar 2s infinite alternate;
+  }
+
+  @keyframes brillar {
+    from {
+      text-shadow:
+        0 0 5px #c19d44,
+        0 0 10px #c19d44,
+        0 0 20px #c19d44,
+        0 0 40px #c19d44;
+    }
+    to {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px #c19d44,
+        0 0 30px #fff,
+        0 0 50px #c19d44;
+    }
+  }
+</style>
+
 </body>
 </html>
