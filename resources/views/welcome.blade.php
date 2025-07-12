@@ -249,7 +249,7 @@
 <footer style="background-color: #111; color: #fff; text-align: center; padding: 1.5rem 1rem; font-family: sans-serif;">
   <p style="margin: 0;">&copy; 2025 ELITEFOX. Todos los derechos reservados.</p>
   <p style="margin: 0.5rem 0 0; font-size: 0.9rem;">
-    Diseño web por <a href="#" style="color: #c1a253; text-decoration: none;">Dylan Savedra (kitsuneDEV)</a>
+    Diseño web por <a href="#" style="color: #c1a253; text-decoration: none;">Dylan Saavedra (kitsuDEV)</a>
   </p>
 </footer>
 
