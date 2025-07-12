@@ -4,12 +4,12 @@
 @section('title', 'ELITEfox-Crear')
 
 @section('content_header')
-    <h1>Crear Categoria</h1>
+    <h1 class="texto-brillante text-center">Crear Categoria</h1>
 @stop
 
 @section('content_top_nav_left')
     <li class="nav-item d-none d-sm-block" style="position: absolute; left: 50%; transform: translateX(-50%);">
-        <span class="fw-bold text-center" style="font-size: 20px; color: #c19d44;"><b>Elite</b>fox</span>
+        <span class="fw-bold texto-brillante text-center" style="font-size: 20px; color: #c19d44;"><b>Elite</b>fox</span>
     </li>
 @endsection
 
