@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-3">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Marca</h4>
+                <h4 class="h4 text-center texto-brillante">Marca</h4>
                 <img src="{{asset('img/index/marca.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('marca.index')}}" type="button" class="btn btn-dorado " style="width: 155px;">Marca</a>
@@ -29,7 +29,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Categoria</h4>
+                <h4 class="h4 text-center texto-brillante">Categoria</h4>
                 <img src="{{asset('img/index/categoria.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('categoria.index')}}" type="button" class="btn btn-dorado " style="width: 155px;">Categoria</a><br>
@@ -38,7 +38,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Clientes</h4>
+                <h4 class="h4 text-center texto-brillante">Clientes</h4>
                 <img src="{{asset('img/index/cliente.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('cliente.index')}}" type="button" class="btn btn-dorado " style="width: 155px;">Cliente</a>
@@ -47,7 +47,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Producto</h4>
+                <h4 class="h4 text-center texto-brillante">Producto</h4>
                 <img src="{{asset('img/index/producto.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('producto.index')}}" type="button" class="btn btn-dorado " style="width: 155px;">Productos</a>
@@ -56,7 +56,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Estado</h4>
+                <h4 class="h4 text-center texto-brillante">Estado</h4>
                 <img src="{{asset('img/index/estado.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('estado.index')}}" type="button" class="btn btn-dorado " style="width: 155px;">Estado</a>
@@ -65,7 +65,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Modo Pago</h4>
+                <h4 class="h4 text-center texto-brillante">Modo Pago</h4>
                 <img src="{{asset('img/index/modoPago.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('modoPago.index')}}" type="button" class="btn btn-dorado " style="width: 155px;">Modo Pago</a>
@@ -74,7 +74,7 @@
             </div>
             <div class="col-3">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Factura</h4>
+                <h4 class="h4 text-center texto-brillante">Factura</h4>
                 <img src="{{asset('img/index/Factura.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('factura.index')}}" type="button" class="btn btn-dorado " style="width: 155px;">Factura</a>
@@ -84,7 +84,7 @@
 
             <div class="col-3" style="">
                 <div class="card" style="width: 232px; height:332px; background-color:black">
-                <h4 class="h4 text-center">Detalle Factura</h4>
+                <h4 class="h4 text-center texto-brillante">Detalle Factura</h4>
                 <img src="{{asset('img/index/detalleFactura.png')}}" style="height:200px; width:200px " alt="">
                 <div class="card-body">
                 <a href="{{route('detalleFactura.imdex')}}" type="button" class="btn btn-dorado " style="width: 155px;">Detalle factura</a>
