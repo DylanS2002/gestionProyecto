@@ -68,7 +68,7 @@ h3{margin: 0;
 .loginBox input[type="text"]:hover, .loginBox input[type="password"]:hover, .loginBox input[type="email"]:hover{
     color: #c19d44;
     border: 1px solid #c19d44
-    ;box-shadow: 0 0 5px rgba(225, 255, 0, 0.3), 0 0 10px rgba(255,225,0,.2), 0 0 15px rgba(255,225,0,.1), 0 2px 0 black
+    ;box-shadow: 0 0 5px rgb(193, 157, 68,0.3), 0 0 10px rgb(193, 157, 68, 0.2), 0 0 15px rgb(193, 157, 68, 0.1), 0 2px 0 black
 }
 .loginBox input[type="text"]:focus, .loginBox input[type="password"]:focus, .loginBox input[type="email"]:focus{
     border-bottom: 2px solid #c19d44}
