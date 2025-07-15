@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: url(https://img.freepik.com/foto-gratis/primer-plano-pared-marmol-blanco-textura_53876-139849.jpg?semt=ais_hybrid&w=740) no-repeat;
+    background-image: url("https://i.pinimg.com/736x/19/d9/b5/19d9b576468ba999e2c49582a5879599.jpg");
     height: 100vh;font-family: sans-serif;background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -24,6 +24,14 @@ body{
     background: #000000;border-radius: 10px;
     padding: 40px;
     box-sizing: border-box
+}
+.loginBox{
+    border: 2px solid #c19d44; /* grosor, tipo y color */
+            border-radius: 8px;     /* esquinas redondeadas */
+            padding: 16px;          /* espacio interno */
+            box-shadow: 0 0 15px #c19d44, 0 0 30px #c19d44; /* sombra opcional */
+            max-width: 300px;
+            justify-content: center
 }
 .user{
     margin: 0 auto;
